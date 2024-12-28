@@ -16,3 +16,19 @@ data = [100, 200, 300, 400]
 daily_data = list(itertools.zip_longest(range(10), data))
 
 print(daily_data)
+
+
+# cycle - also returns an iterable that goes on forever (keeps going over the list cycling back)
+counter = itertools.cycle(['on', 'off'])
+print(next(counter)) 
+print(next(counter)) 
+print(next(counter)) 
+
+# repeat - takes some input and repeats it indefinetely (can specify how many times) will return StopIteration error after the times value
+counter = itertools.repeat(2, times=3)
+
+
+# combinations - are all the different types you can group a certain number of items where order does not matter
+
+
+# permutations
