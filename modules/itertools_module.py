@@ -32,3 +32,5 @@ counter = itertools.repeat(2, times=3)
 
 
 # permutations
+
+# chain
