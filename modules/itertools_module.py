@@ -28,9 +28,20 @@ print(next(counter))
 counter = itertools.repeat(2, times=3)
 
 
-# combinations - are all the different types you can group a certain number of items where order does not matter
+letters = ['a', 'b', 'c', 'd']
+numbers = [-1, 0, 1]
+names = ['Sam', 'Polly']
+# combinations - are all the different types you can group a certain number of items where order does not matter ((a, b) would be the same as (b, a) so it wouldn't have it)
+result = itertools.combinations(numbers, 2)
+print(list(result))
 
 
-# permutations
+# permutations are all the different ways you can group a certain number of items where the order does matter
+result = itertools.permutations(numbers, 2)
+print(list(result))
+
+# product- are all the different types you can group a certainnumber of items with repeats
+result = itertools.product(numbers, repeat=2)
+print(list(result))
 
 # chain
