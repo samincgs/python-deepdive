@@ -45,3 +45,11 @@ result = itertools.product(numbers, repeat=2)
 print(list(result))
 
 # chain
+# combined = letters + numbers + names # not good because it creates a new list with all of those values in memory (super inefficients)
+combined = itertools.chain(letters, numbers, names)
+
+print(list(combined)) # more efficient approach
+
+# islice - perform slicing on an iterator
+slice = itertools.islice(range(10), 5) # stops on the 5th vaue of the range
+print(list(slice))
