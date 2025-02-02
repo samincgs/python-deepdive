@@ -1,5 +1,4 @@
 # some utility functions
-
 def add(x, y):
     return x + y
 
