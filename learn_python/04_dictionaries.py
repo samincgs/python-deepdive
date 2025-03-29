@@ -12,8 +12,7 @@ student['name'] = 'Sam'
 student.update({'name': 'Jane', 'age': 26, 'phone': '555-5555'})
 
 #remove a key
-del student['age']
-
+del student['age'] 
 # pop the value
 age = student.pop('age')
 
